@@ -1,6 +1,6 @@
-package repositories;
+/*package repositories;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.After;
 import org.junit.Before;
@@ -20,27 +20,27 @@ public class EmpresaRepositoryTest {
 	
 	@Autowired
 	private EmpresaRepository empresaRepository;
-	private static final String CNPJ = "51463645000100";
 	
+	private static final String CNPJ = "51463645000100";
+
 	@Before
-	public void setUp() throws Exception{
-		
+	public void setUp() throws Exception {
 		Empresa empresa = new Empresa();
-		empresa.setRazaoSocial("Empresa de testes");
+		empresa.setRazaoSocial("Empresa de exemplo");
 		empresa.setCnpj(CNPJ);
 		this.empresaRepository.save(empresa);
 	}
 	
 	@After
-	public final void tearDown() {
+    public final void tearDown() { 
 		this.empresaRepository.deleteAll();
 	}
-	
+
 	@Test
-	public void buscarPorCnpj() {
+	public void testBuscarPorCnpj() {
 		Empresa empresa = this.empresaRepository.findByCnpj(CNPJ);
-		assertEquals(CNPJ, empresa.getCnpj());
 		
+		assertEquals(CNPJ, empresa.getCnpj());
 	}
-	
-}
+
+}*/

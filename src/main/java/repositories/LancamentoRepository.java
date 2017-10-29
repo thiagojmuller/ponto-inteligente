@@ -11,7 +11,6 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 
 import entities.Lancamento;
-import entities.Funcionario;
 
 @Transactional(readOnly = true)
 @NamedQueries({
